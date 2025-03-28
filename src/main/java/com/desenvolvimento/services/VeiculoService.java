@@ -40,7 +40,6 @@ public class VeiculoService {
 
     public Veiculo create(VeiculoDTO dto){
         dto.setId(null);
-        validaVeiculo(dto);
         Veiculo obj = new Veiculo(dto);
         return veiculoRepository.save(obj);
     }
