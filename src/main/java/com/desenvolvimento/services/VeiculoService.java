@@ -40,6 +40,7 @@ public class VeiculoService {
 
     public Veiculo create(VeiculoDTO dto){
         dto.setId(null);
+        validaVeiculo(dto); // meu erro está aqui, entreguei aprova nos ultimos minutos e só vi depois esse erro :(
         Veiculo obj = new Veiculo(dto);
         return veiculoRepository.save(obj);
     }
