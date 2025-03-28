@@ -57,7 +57,6 @@ public class VeiculoService {
         oldObj = new Veiculo(objDto);
         return veiculoRepository.save(oldObj);
     }
-
     public void delete(Long id){
         Veiculo obj = findById(id);
         veiculoRepository.deleteById(id);
